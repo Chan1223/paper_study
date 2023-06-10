@@ -22,7 +22,7 @@ Tags: CNN, Done
 
 ### LeNet-1
 
-![Untitled](LeNet%20ccecdf7923f643fd9e703d54faf07ce2/Untitled.png)
+![Untitled](Untitled.png)
 
 - Convolutiotional layer + Pooloing layer를 반복하며 전역적으로 의미있는 특징을 찾아내는 현대 CNN의 기본적인 형태 구조를 가짐
 
@@ -38,9 +38,9 @@ Tags: CNN, Done
 
 ### LeNet-5
 
-![Untitled](LeNet%20ccecdf7923f643fd9e703d54faf07ce2/Untitled%201.png)
+![Untitled](Untitled%201.png)
 
-![Untitled](LeNet%20ccecdf7923f643fd9e703d54faf07ce2/Untitled%202.png)
+![Untitled](Untitled%202.png)
 
 - LeNet-1 의 구조를 발전시킨 모델, 입력 이미지 크기, feature-map의 개수 및 fully-connected layer의 크기에 변화가 있음
 - 3개의 Convolutional, 2개의 subsampling layer, 1개의 fully-connected layer
@@ -49,7 +49,7 @@ Tags: CNN, Done
     - 32*32 size를 input으로 받음
 - Layer C1
     
-    ![Untitled](LeNet%20ccecdf7923f643fd9e703d54faf07ce2/Untitled%203.png)
+    ![Untitled](Untitled%203.png)
     
     → 5*5 filter 6개로 convolutional
     
@@ -59,7 +59,7 @@ Tags: CNN, Done
     
 - Layer S2
     
-    ![Untitled](LeNet%20ccecdf7923f643fd9e703d54faf07ce2/Untitled%204.png)
+    ![Untitled](Untitled%204.png)
     
     → 2*2 size Subsampling(Average pooling, overlapping X)
     
@@ -72,11 +72,11 @@ Tags: CNN, Done
 
 - Layer C3
     
-    ![Untitled](LeNet%20ccecdf7923f643fd9e703d54faf07ce2/Untitled%205.png)
+    ![Untitled](Untitled%205.png)
     
     -> 5*5 size filter를 다시 한번 적용해 16개의 feature map 생성
     
-    ![Untitled](LeNet%20ccecdf7923f643fd9e703d54faf07ce2/Untitled%206.png)
+    ![Untitled](Untitled%206.png)
     
     → 6개였던 feature map을 위의 사진과 같이 연결시켜 총 16개의 feature map을 생성
     
@@ -84,7 +84,7 @@ Tags: CNN, Done
     
     ⇒ convolution 된 low-level의 feature가 서로 다른 부분들과 혼합되면서 최종적으로 좀 더 global한 feature가 얻어지길 기대함
     
-    ![Untitled](LeNet%20ccecdf7923f643fd9e703d54faf07ce2/Untitled%207.png)
+    ![Untitled](Untitled%207.png)
     
     → parameter : (5 * 5 * 6* 10) + (1*16) = 1516
     
@@ -138,8 +138,8 @@ C1 + S2 + C3 + S4 + C5 + F6
 
 = 600850개
 
-![Untitled](LeNet%20ccecdf7923f643fd9e703d54faf07ce2/Untitled%208.png)
+![Untitled](Untitled%208.png)
 
 - Alexnet과의 비교
 
-![Untitled](LeNet%20ccecdf7923f643fd9e703d54faf07ce2/Untitled%209.png)
+![Untitled](Untitled%209.png)
